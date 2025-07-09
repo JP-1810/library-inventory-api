@@ -15,7 +15,7 @@ app.use(
 app.use(express.json());
 
 const bookSchema = new mongoose.Schema({
-  title: { type: String, require: true },
+  title: { type: String, required : true },
   author: String,
   genre: String,
   publishedYear: Number,
