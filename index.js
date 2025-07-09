@@ -15,7 +15,7 @@ app.use(
 app.use(express.json());
 
 const bookSchema = new mongoose.Schema({
-  title: { type: String, required : true },
+  title: { type: String, required: true },
   author: String,
   genre: String,
   publishedYear: Number,
@@ -51,14 +51,15 @@ app.delete("/books/:id", async (req, res) => {
   res.json({ message: "Book has been deleted !" });
 });
 
-mongoose.connect(MONGOURL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => {
-  console.log("MongoDB connected");
-});
-}).catch((e) => {
-  console.error("MongoDB connection error : " , e);
-});
-         
-app.listen(PORT, () => console.log("Server is running on port 8080"));
+mongoose
+  .connect(MONGOURL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log("MongoDB connected");
+    app.listen(PORT, () => console.log("Server is running on port 8080"));
+  })
+  .catch((e) => {
+    console.error("MongoDB connection error:", e);
+  });
