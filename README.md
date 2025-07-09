@@ -32,9 +32,23 @@ Adds a new book to the inventory.
 Example:
 POST     https://library-inventory-api.onrender.com/books
 
+<img width="716" height="842" alt="Image" src="https://github.com/user-attachments/assets/8ccb7c51-a6a4-4e1a-a63d-995dff2e9547" />
+
 2. **GET /books**  
    Returns the list of all books stored in the database.  
    Example:
 GET     https://library-inventory-api.onrender.com/books
 
 <img width="744" height="813" alt="Image" src="https://github.com/user-attachments/assets/5cacbf3e-b679-417b-918d-80ec7d80d02a" />
+
+3. **PUT /books/:id**
+Updates an existing book by its MongoDB _id.
+Example:
+PUT    https://library-inventory-api.onrender.com/books/your_book_id
+
+4. DELETE /books/:id
+Deletes a book from the inventory by its ID.
+Example:
+DELETE https://library-inventory-api.onrender.com/books/your_book_id
+
+
