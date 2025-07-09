@@ -54,6 +54,11 @@ app.delete("/books/:id", async (req, res) => {
 mongoose.connect(MONGOURL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+}).then(() => {
+  console.log("MongoDB connected");
 });
-
+}).catch((e) => {
+  console.error("MongoDB connection error : " , e);
+});
+         
 app.listen(PORT, () => console.log("Server is running on port 8080"));
