@@ -27,7 +27,14 @@
 
   ###  Endpoints:
 
-1. **GET /books**  
+1. **POST /books**  
+Adds a new book to the inventory.  
+Example:
+POST     https://library-inventory-api.onrender.com/books
+
+2. **GET /books**  
    Returns the list of all books stored in the database.  
    Example:
 GET     https://library-inventory-api.onrender.com/books
+
+<img width="744" height="813" alt="Image" src="https://github.com/user-attachments/assets/5cacbf3e-b679-417b-918d-80ec7d80d02a" />
