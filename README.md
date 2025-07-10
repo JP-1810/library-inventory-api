@@ -1,5 +1,21 @@
 # Library Inventory RESTful APT
 
+# static-website-for-portfolio
+
+*COMPANY* : CODTECH IT SOLUTIONS
+
+*NAME* : JAGRUTI POTHAL
+
+*INTERN ID* : CT06DG1185
+
+*DOMAIN* : SOFTWARE DEVELOPMENT 
+
+*DURATION* : 4 WEEKS
+
+*MENTOR* : NEELA SANTHOSH KUMAR
+
+# RESTFUL API DEVELOPMENT
+
 ## This is a simple and functional RESTful API  built using  **Node.js**, **Express.js**, and **MongoDB (via Mongoose)** that allows users to perform CRUD (Create, Read, Update, Delete) operations on a virtual library inventory system. It is designed to manage a list of books, including their title, author, genre, publication year, and availability status.
 
 ### The backend is deployed and live at:  
