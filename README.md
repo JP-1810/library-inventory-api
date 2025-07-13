@@ -1,6 +1,5 @@
 # Library Inventory RESTful APT
 
-# static-website-for-portfolio
 
 *COMPANY* : CODTECH IT SOLUTIONS
 
